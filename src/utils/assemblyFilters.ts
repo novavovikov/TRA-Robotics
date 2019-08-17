@@ -1,7 +1,10 @@
 import { iAssemblySearchParams } from '../types'
 import { ANY_STATUS, PAGE_SIZE } from '../constants/filters'
 
-export const getAssemblyQuery = (params: iAssemblySearchParams, init: boolean) => {
+export const getAssemblyQuery = (
+  params: iAssemblySearchParams,
+  init: boolean
+) => {
   const searchParams = {
     _start: 0,
     _end: PAGE_SIZE

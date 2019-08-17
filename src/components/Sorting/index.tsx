@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, { FC, MouseEvent } from 'react'
 import { RouteComponentProps, withRouter } from 'react-router'
 import { Switch } from '../../UI'
 import * as s from './Sorting.css'
@@ -27,8 +27,8 @@ const Sorting: FC<Props> = (props) => {
     return urlSearchParams.get(type) || 'asc'
   }
 
-  const handleSwitch = (e: any) => {
-    const { value } = e.target
+  const handleSwitch = (e: React. MouseEvent<HTMLButtonElement>) => {
+    const { value } = e.target as HTMLButtonElement
 
     const urlSearchParams = new URLSearchParams(location.search)
     urlSearchParams.set(type, value)

@@ -1,9 +1,9 @@
 import React, { Component, MouseEvent } from 'react'
-import cn from 'classnames'
 import { RouteComponentProps, withRouter } from 'react-router'
+import cn from 'classnames'
 import { IFilter } from '../../types'
-import * as s from './StatusFilter.css'
 import { ANY_STATUS } from '../../constants/filters'
+import * as s from './StatusFilter.css'
 
 interface Props extends RouteComponentProps {
   title: string,

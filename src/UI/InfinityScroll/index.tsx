@@ -7,7 +7,7 @@ interface Props {
 
 class InfinityScroll extends Component<Props> {
   private offsetBottom = 250
-  wrapperRef =createRef<HTMLDivElement>()
+  wrapperRef = createRef<HTMLDivElement>()
 
   static defaultProps = {
     handlerOn: true
@@ -36,10 +36,9 @@ class InfinityScroll extends Component<Props> {
   }
 
   render () {
-    const { children } = this.props
     return (
       <div ref={this.wrapperRef}>
-      {children}
+        {this.props.children}
       </div>
     )
   }

@@ -19,8 +19,6 @@ const Button: FC<Props> = (
       className={cn(
         s.Button,
         className,
-        {
-        },
       )}
       {...rest}
     >

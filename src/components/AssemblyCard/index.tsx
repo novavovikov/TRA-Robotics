@@ -1,12 +1,12 @@
 import React, { ChangeEvent, Component, createRef, KeyboardEvent } from 'react'
 import cn from 'classnames'
 import format from 'date-fns/format'
+import { Link } from 'react-router-dom'
 import { AssemblyStatusEnum, iAssemblyItem, IconTypes, ReviewStatusEnum } from '../../types'
 import { CARD_STATUS_NAMES } from '../../constants/filters'
-import s from './AssemblyCard.css'
-import { Link } from 'react-router-dom'
 import { ROUTES } from '../../constants/routes'
 import { Icon } from '../../UI'
+import s from './AssemblyCard.css'
 
 interface Props {
   data: iAssemblyItem

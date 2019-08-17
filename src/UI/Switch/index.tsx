@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, { FC, MouseEvent } from 'react'
 import cn from 'classnames'
 import * as s from './Switch.css'
 
@@ -9,7 +9,7 @@ interface SwitchControl {
 
 interface Props {
   controls: SwitchControl[]
-  onChange: (e: any) => void
+  onChange: (e: MouseEvent<HTMLButtonElement>) => void
   value: string
 }
 
