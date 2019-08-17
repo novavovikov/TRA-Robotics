@@ -1,0 +1,10 @@
+@import "../../styles/variables.css";
+
+.Sorting {
+  display: flex;
+  align-items: center;
+
+  &__label {
+    margin: 0 13px 0 0;
+  }
+}

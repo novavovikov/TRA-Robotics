@@ -1,0 +1,84 @@
+:root {
+  @custom-media --xl (max-width: 1280px);
+  @custom-media --lg (max-width: 960px);
+  @custom-media --md (max-width: 760px);
+  @custom-media --xs (max-width: 540px);
+
+  --transition-fast: .3s;
+  --transition: .5s;
+  --transition-slow: .8s;
+
+  --radus: 4px;
+
+  --ff-lab-r: 'Lab Grotesque Regular', sans-serif;
+  --ff-lab-b: 'Lab Grotesque Bold', sans-serif;
+  --ff-robert-b: 'Roobert-Bold', sans-serif;
+  --ff-robert-m: 'Roobert Medium', sans-serif;
+
+  /*colors*/
+  --c-gray: rgba(0, 0, 0, .5);
+  --c-porcelain: #F4F5F6;
+  --c-iron: #D6DADB;
+  --c-crimson: #E91630;
+  --c-emerald: #34C86E;
+  --c-royal-blue: #2B7CEE;
+
+  --h2: {
+    font-size: 24px;
+    line-height: 24px;
+    font-family: var(--ff-robert-b);
+    color: #000;
+  };
+
+  --h4: {
+    font-size: 18px;
+    line-height: 24px;
+    font-family: var(--ff-robert-b);
+    color: #000;
+  };
+
+  --font-xs: {
+    font-size: 11px;
+    line-height: 13px;
+  };
+
+  --font-s: {
+    font-size: 12px;
+    line-height: 14px;
+  };
+
+  --font-s: {
+    font-size: 12px;
+    line-height: 14px;
+  };
+
+  --font-m: {
+    font-size: 13px;
+    line-height: 16px;
+  };
+
+  --font-lg: {
+    font-size: 14px;
+    line-height: 24px;
+  };
+
+  --button: {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    @apply --font-m;
+    font-family: var(--ff-lab-b);
+    letter-spacing: .144444px;
+    color: #fff;
+    background: var(--c-royal-blue);
+    margin: 0;
+    padding: 12px 14px;
+    border-radius: var(--radus);
+    border: none;
+    transition: var(--transition-fast);
+
+    &:hover {
+      opacity: .95;
+    }
+  }
+}

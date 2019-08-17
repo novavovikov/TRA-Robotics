@@ -1,0 +1,145 @@
+@import "../../styles/variables.css";
+
+.AssemblyCard {
+  display: flex;
+  align-items: center;
+  position: relative;
+  min-height: 132px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(54, 65, 76, 0.15);
+  border-radius: var(--radus);
+  padding: 16px 24px 16px 32px;
+  margin: 0 0 12px;
+  transition: var(--transition-fast);
+
+  &:hover {
+    box-shadow: 0 6px 12px rgba(54, 65, 76, 0.15);
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__status {
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    background: #fff;
+    color: #000;
+    @apply --font-xs;
+    font-family: var(--ff-lab-b);
+    border: 1px solid #AFB3B6;
+    box-sizing: border-box;
+    border-radius: 3px;
+    text-align: center;
+    letter-spacing: .2px;
+    padding: 3px 5px;
+    z-index: 3;
+
+    &_in_review {
+      background: #FFC800;
+      border-color: rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  &__img {
+    position: relative;
+    width: 160px;
+    height: 110px;
+    background: url("./images/placeholder.svg") no-repeat center/contain;
+    margin: 0 42px 0 0;
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      max-width: 100%;
+      max-height: 100%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__info {
+    width: 287px;
+  }
+
+  &__title {
+    width: 100%;
+    @apply --h4;
+    background: none;
+    border: solid var(--c-royal-blue);
+    border-width: 0 0 1px;
+    padding: 0;
+    margin: 0 0 2px;
+
+    &:disabled {
+      border-bottom-color: transparent;
+    }
+  }
+
+  &__row {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    z-index: 0;
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 5px;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: #BDC0C1;
+      z-index: -1;
+    }
+  }
+
+  &__label {
+    background: #fff;
+    padding: 0 4px 0 0;
+  }
+
+  &__value {
+    background: #fff;
+    color: #000;
+    padding: 0 0 0 4px;
+
+    &_red {
+      color: var(--c-crimson);
+    }
+
+    &_green {
+      color: var(--c-emerald);
+    }
+  }
+
+  &:hover &__controls {
+    display: block;
+  }
+
+  &__controls {
+    text-align: right;
+    margin: 0 0 0 auto;
+    display: none;
+  }
+
+  &__control {
+    background: none;
+    border: none;
+    margin: 0 0 0 5px;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+  }
+
+  &__button {
+    @apply --button;
+    margin: 28px 0 0;
+  }
+}

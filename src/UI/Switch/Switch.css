@@ -1,0 +1,21 @@
+@import "../../styles/variables.css";
+
+.Switch {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  border-radius: 21px;
+  background: #E1E5E6;
+
+  &__control {
+    background: none;
+    border: none;
+    padding: 4px 18px;
+    border-radius: 21px;
+
+    &_active {
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(55, 88, 123, 0.16), 0 2px 4px rgba(0, 0, 0, 0.06);
+    }
+  }
+}

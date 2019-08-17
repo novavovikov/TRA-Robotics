@@ -1,0 +1,86 @@
+@import "variables.css";
+
+:global {
+  @font-face {
+    font-family: 'Lab Grotesque Regular';
+    src: url('./fonts/LabGrotesque-Regular/LabGrotesque-Regular.woff2') format('woff2'),
+    url('./fonts/LabGrotesque-Regular/LabGrotesque-Regular.woff') format('woff'),
+    url('./fonts/LabGrotesque-Regular/LabGrotesque-Regular.ttf') format('truetype'),
+    url('./fonts/LabGrotesque-Regular/LabGrotesque-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Roobert Medium';
+    src: url('./fonts/Roobert-Medium/Roobert-Medium.woff2') format('woff2'),
+    url('./fonts/Roobert-Medium/Roobert-Medium.woff') format('woff'),
+    url('./fonts/Roobert-Medium/Roobert-Medium.otf') format('opentype'),
+    url('./fonts/Roobert-Medium/Roobert-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+
+  @font-face {
+    font-family: 'Roobert-Bold';
+    src: url('./fonts/Roobert-Bold/Roobert-Bold.woff2') format('woff2'),
+    url('./fonts/Roobert-Bold/Roobert-Bold.woff') format('woff'),
+    url('./fonts/Roobert-Bold/Roobert-Bold.otf') format('opentype'),
+    url('./fonts/Roobert-Bold/Roobert-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Lab Grotesque Bold';
+    src: url('./fonts/LabGrotesque-Bold/LabGrotesque-Bold.woff2') format('woff2'),
+    url('./fonts/LabGrotesque-Bold/LabGrotesque-Bold.woff') format('woff'),
+    url('./fonts/LabGrotesque-Bold/LabGrotesque-Bold.otf') format('opentype'),
+    url('./fonts/LabGrotesque-Bold/LabGrotesque-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  * {
+    box-sizing: border-box;
+    border-radius: 0;
+    appearance: none;
+    outline: none;
+
+    &:before, &:after {
+      box-sizing: border-box;
+    }
+  }
+
+  body {
+    @apply --font-lg;
+    font-family: var(--ff-lab-r);
+    color: var(--c-gray);
+    min-width: 320px;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  img {
+    border: none;
+    width: auto;
+    height: auto;
+  }
+
+  button {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+}

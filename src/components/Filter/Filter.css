@@ -1,0 +1,14 @@
+@import "../../styles/variables.css";
+
+.Filter {
+  width: 240px;
+  background: var(--c-porcelain);
+  padding: 20px 20px 30px;
+  border-radius: var(--radus);
+  border: 1px solid var(--c-iron);
+
+  &__title {
+    @apply --h4;
+    margin: 0 0 14px;
+  }
+}
