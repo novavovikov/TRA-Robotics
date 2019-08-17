@@ -1,8 +1,3 @@
-.config/
+.idea/
 .npm/
-.home/
-.next/
-out/
-dist/
-out/
 node_modules/
