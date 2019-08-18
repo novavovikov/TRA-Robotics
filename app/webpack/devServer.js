@@ -5,6 +5,6 @@ module.exports = () => ({
   host: 'localhost',
   port: 4000,
   proxy: {
-    '/api': 'http://localhost:3000/assembly',
+    '/api': 'http://localhost:3000/api/assembly',
   },
 })

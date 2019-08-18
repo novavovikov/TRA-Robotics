@@ -1,8 +1,8 @@
 ## TRA
 
-#### Run application
+#### Run for dev
 ```
-./run.sh
+npm i && npm start
 ```
 
 #### Template
